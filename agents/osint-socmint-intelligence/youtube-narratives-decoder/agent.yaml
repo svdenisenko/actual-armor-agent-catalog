@@ -1,0 +1,34 @@
+id: youtube-narratives-decoder
+name: YouTube Narratives Decoder
+description: Decode the true meaning behind the media. Paste a YouTube link, and this agent will extract the transcript, categorize main and secondary narratives, and expose the psychological framing used to influence the audience.
+source_url: https://github.com/svdenisenko/actual-armor-agent-catalog/tree/main/agents/osint-socmint-intelligence/youtube-narratives-decoder
+source_date: 2026-05-21
+primary_category: Media / Content Intelligence
+secondary_category: Narrative Intelligence & Response
+target_users:
+  - journalists
+  - analysts
+  - fact-checkers
+  - OSINT researchers
+  - media literacy users
+  - comms / PR teams
+  - policy / strategic communications teams
+required_tools:
+  - http
+  - webSearch
+  - webContent
+source_completeness: full_spec_draft
+readiness:
+  catalog_status: full_spec_draft
+  qa_status: not_tested
+  promotion_status: not_promotion_ready
+public_catalog_visibility: public_full
+safety:
+  no_claim_of_video_viewing_without_input: true
+  no_claim_of_transcript_extraction_without_tool_or_data: true
+  separate_narrative_analysis_from_factual_verification: true
+  no_binary_disinformation_or_propaganda_label_without_evidence: true
+  confidence_labels_required: true
+  source_verification_required_for_factual_claims: true
+  avoid_inference_of_intent: true
+  non_partisan_analysis_required: true
