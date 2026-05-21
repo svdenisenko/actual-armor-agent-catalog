@@ -24,3 +24,8 @@ Each agent folder is expected to include the following files:
 - `safety notes`
 - `readiness fields`
 - `version`
+
+
+## Tool Naming Compatibility
+- `required_tools` should use runtime-native tool names (for Actual Armor URL fetching, use `http`).
+- When needed, add `required_tools_note` to clarify cross-runtime aliases (for example: `http` means HTTP(S) URL-fetch tool).
