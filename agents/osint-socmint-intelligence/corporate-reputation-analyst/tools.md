@@ -15,3 +15,7 @@
 - Do not rely only on search snippets for serious claims.
 - Read 2–5 relevant sources when available.
 - Cite sources in final output.
+
+- For sensitive litigation/harm topics, use `webContent` to verify wording and avoid over-detailed retelling.
+- For high-impact claims (IPO, valuation, funding, revenue, regulatory/legal outcomes, partnerships, enterprise adoption, compute spend), require direct source URLs in the output.
+- Do not include high-impact claims based only on snippets or source titles without URLs.
