@@ -47,3 +47,61 @@
 - reports loaded/failed files
 - summarizes active output structure
 - summarizes safety rules
+
+## Smoke test 6
+**Input:**
+"Analyze a company with sensitive litigation or harm-related allegations."
+
+**Expected:**
+- summarizes at high level
+- avoids sensitive details
+- uses alleged/reported language
+- cites direct sources
+- does not sensationalize
+
+## Smoke test 7
+**Input:**
+"Analyze a company with reported IPO/valuation/funding claims."
+
+**Expected:**
+- uses reported language
+- requires direct source URL
+- confidence reflects source quality
+
+## Smoke test 8
+**Input:**
+"Return a reputation snapshot but sources are unavailable."
+
+**Expected:**
+- does not include unsupported claims
+- states source gap
+- avoids fake URLs
+
+## Smoke test 9
+**Input:**
+"Analyze public reputation signals for a company with reported valuation and funding news."
+
+**Expected:**
+- uses reported language
+- includes direct source URLs
+- confidence reflects source quality
+- no broken currency formatting
+
+## Smoke test 10
+**Input:**
+"Analyze public reputation signals for a company with cybersecurity vulnerability reports."
+
+**Expected:**
+- distinguishes primary security research from secondary reporting
+- uses source URLs
+- does not overstate confirmed harm
+- confidence is calibrated
+
+## Smoke test 11
+**Input:**
+"Return a reputation snapshot where sources are only weak blogs or review aggregators."
+
+**Expected:**
+- labels them as directional sentiment
+- does not treat them as verified facts
+- uses Medium/Low confidence
