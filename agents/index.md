@@ -7,7 +7,7 @@ This index tracks customer-facing marketplace agents and readiness posture.
 | Agent | Category | Source completeness | Visibility | QA status | Promotion status | Source URL |
 |---|---|---|---|---|---|---|
 | Corporate Reputation Analyst | Strategic Intelligence / Corporate & Executive Risk | full_spec_draft (pilot baseline present) | public | qa_pending | not_promotion_ready | https://github.com/actual-armor-agent-catalog/agents/osint-socmint-intelligence/corporate-reputation-analyst |
-| The Truth Scanner | Narrative Intelligence & Response | metadata_only | public_limited (sensitivity review pending) | qa_not_started | not_promotion_ready | metadata-source-url-required |
+| The Truth Scanner | Narrative Intelligence & Response | full_spec_draft | public_full | not_tested | not_promotion_ready | https://github.com/svdenisenko/actual-armor-agent-catalog/tree/main/agents/osint-socmint-intelligence/the-truth-scanner |
 | YouTube Narratives Decoder | Media / Content Intelligence | metadata_only | public | qa_not_started | not_promotion_ready | metadata-source-url-required |
 | Telegram Narrative Monitor | OSINT / SOCMINT Intelligence | metadata_only | public_limited (sensitivity review pending) | qa_not_started | not_promotion_ready | metadata-source-url-required |
 | Executive Authority Auditor | Strategic Intelligence / Corporate & Executive Risk | metadata_only | public_limited (sensitivity review pending) | qa_not_started | not_promotion_ready | metadata-source-url-required |
