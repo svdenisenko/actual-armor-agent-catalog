@@ -1,5 +1,31 @@
 # Smoke Tests
 
+## Runtime smoke results (Actual Armor)
+
+### Runtime Test 1 — Spec loading
+Prompt:
+"Load your current operating specification from the repository link in your instructions. Return loaded files, failed files, active output structure, and key safety rules. Do not run analysis yet."
+
+Result: **PASS**
+- Loaded via HTTP: `bootstrap.md`, `system.md`, `instructions.md`, `output-template.md`, `knowledge.md`, `tools.md`.
+- Failed files: none.
+- Behavior matched expected runtime loading and reporting requirements.
+
+### Runtime Test 2 — Framing/fallacy behavior
+Prompt:
+"Analyze this text for manipulation, framing, and fallacies. Do not verify externally unless needed:
+'They don't want you to know the truth. Every expert who disagrees is either paid off or afraid. If we don't act now, our country will collapse.'"
+
+Result: **PASS**
+- Performed language/framing-only analysis with no unnecessary external verification.
+- Did not assign a binary disinformation label.
+- Separated framing risk from factual verification.
+- Used confidence labels.
+- Identified conspiracy framing, fear appeal, unsupported certainty, ad hominem / poisoning the well, false dilemma, and appeal to emotion.
+
+Minor improvement note:
+- For vague predictive claims (e.g., "our country will collapse"), mark verification status as **context-dependent** instead of simply "No".
+
 ## Smoke test 1
 Input:
 “Analyze this paragraph for manipulation and fallacies: [short political claim].”
