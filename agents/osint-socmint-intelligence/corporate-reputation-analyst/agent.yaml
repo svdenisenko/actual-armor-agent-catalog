@@ -14,9 +14,10 @@ target_audience:
 primary_use_case: Provide fast, evidence-backed public-reputation snapshots of target companies.
 user_benefit: Helps users assess trust-sensitive business moves using public reputation signals.
 required_tools:
-  - https
+  - http
   - webSearch
   - webContent
+required_tools_note: http means HTTP(S) URL-fetch tool for trusted repo spec loading.
 readiness:
   catalog_status: pilot
   qa_status: not_tested
