@@ -47,11 +47,16 @@
 - Check 2
 - Check 3
 
-## 10. If source verification was performed
+## 10. Source verification output
+If source verification was **performed**, include this table:
+
 | Claim | Finding | Source URL | Confidence |
 |---|---|---|---|
 
 Source URL must be a clickable Markdown link. Source-title-only entries are invalid.
+
+If source verification was **not performed**, do **not** render an N/A source table. Use a short note instead:
+"Source verification was not performed because the user requested framing-only analysis and the excerpt lacks enough context."
 
 ## 11. Bottom line
 A concise, careful conclusion. Do not label the video as disinformation or propaganda unless evidence supports that conclusion.

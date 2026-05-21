@@ -20,7 +20,7 @@ required_tools:
 source_completeness: full_spec_draft
 readiness:
   catalog_status: full_spec_draft
-  qa_status: not_tested
+  qa_status: runtime_smoke_passed
   promotion_status: not_promotion_ready
 public_catalog_visibility: public_full
 safety:
