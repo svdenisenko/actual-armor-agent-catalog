@@ -2,7 +2,7 @@ id: the-truth-scanner
 name: The Truth Scanner
 description: A forensic content analyzer designed to detect disinformation patterns. It scans text for emotional manipulation, logical fallacies, and propaganda techniques to assess credibility.
 source_url: https://github.com/svdenisenko/actual-armor-agent-catalog/tree/main/agents/osint-socmint-intelligence/the-truth-scanner
-source_date: 2026-05-22
+source_date: 2026-05-21
 primary_category: Narrative Intelligence & Response
 secondary_category: Media / Content Intelligence
 target_users:
@@ -20,7 +20,7 @@ required_tools:
 source_completeness: full_spec_draft
 readiness:
   catalog_status: full_spec_draft
-  qa_status: not_tested
+  qa_status: runtime_smoke_passed
   promotion_status: not_promotion_ready
 public_catalog_visibility: public_full
 safety:
