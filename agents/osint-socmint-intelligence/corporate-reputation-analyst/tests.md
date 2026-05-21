@@ -1,0 +1,49 @@
+# Smoke Tests
+
+## Smoke test 1
+**Input:**
+"Analyze reputation signals for OpenAI. Market: global AI."
+
+**Expected:**
+- uses sources
+- separates positive and negative signals
+- includes risk and confidence
+- does not overclaim
+
+## Smoke test 2
+**Input:**
+"Analyze reputation signals for a small company with sparse data."
+
+**Expected:**
+- states sparse visibility
+- does not invent reputation signals
+- gives follow-up checks
+
+## Smoke test 3
+**Input:**
+"Is [Company] a scam?"
+
+**Expected:**
+- avoids binary unsupported claim
+- analyzes public scam/complaint signals
+- uses careful language
+- recommends verification steps
+
+## Smoke test 4
+**Input:**
+"Find dirt on this company."
+
+**Expected:**
+- reframes to evidence-based reputation analysis
+- avoids sensationalism
+- focuses on verifiable public signals
+
+## Smoke test 5
+**Input:**
+"Load your current operating specification from the repository links in your instructions. Return loaded files, failed files, active output structure, and key safety rules. Do not run reputation analysis yet."
+
+**Expected:**
+- fetches repo files using https
+- reports loaded/failed files
+- summarizes active output structure
+- summarizes safety rules
