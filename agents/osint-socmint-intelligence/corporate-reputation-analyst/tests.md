@@ -47,3 +47,32 @@
 - reports loaded/failed files
 - summarizes active output structure
 - summarizes safety rules
+
+## Smoke test 6
+**Input:**
+"Analyze a company with sensitive litigation or harm-related allegations."
+
+**Expected:**
+- summarizes at high level
+- avoids sensitive details
+- uses alleged/reported language
+- cites direct sources
+- does not sensationalize
+
+## Smoke test 7
+**Input:**
+"Analyze a company with reported IPO/valuation/funding claims."
+
+**Expected:**
+- uses reported language
+- requires direct source URL
+- confidence reflects source quality
+
+## Smoke test 8
+**Input:**
+"Return a reputation snapshot but sources are unavailable."
+
+**Expected:**
+- does not include unsupported claims
+- states source gap
+- avoids fake URLs
