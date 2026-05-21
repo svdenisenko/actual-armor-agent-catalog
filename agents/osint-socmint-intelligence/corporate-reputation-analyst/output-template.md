@@ -14,6 +14,8 @@
 | Signal | Evidence | Source URL | Confidence |
 |---|---|---|---|
 
+Source URL must be a clickable Markdown link. Source-title-only entries are invalid.
+
 ## 4. Trust-negative signals & controversy markers
 | Risk marker | Evidence | Source URL | Confidence |
 |---|---|---|---|
@@ -35,6 +37,8 @@ If no major negative signals are found, say:
 - [Source title](URL)
 
 Do not list source titles without URLs.
+If no usable source URL exists, state:
+"No source URL available; claim excluded from main evidence tables."
 
 ## 8. Next steps
 - Query 1:

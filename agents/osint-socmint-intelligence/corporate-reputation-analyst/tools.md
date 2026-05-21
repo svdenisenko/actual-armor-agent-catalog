@@ -19,3 +19,8 @@
 - For sensitive litigation/harm topics, use `webContent` to verify wording and avoid over-detailed retelling.
 - For high-impact claims (IPO, valuation, funding, revenue, regulatory/legal outcomes, partnerships, enterprise adoption, compute spend), require direct source URLs in the output.
 - Do not include high-impact claims based only on snippets or source titles without URLs.
+
+- Only cite sources actually read via `webContent` or with direct URLs obtained from `webSearch`; do not cite unused sources.
+- For cybersecurity incidents/claims, prefer primary disclosures (CVE/advisories/vendor research/official statements) and calibrate confidence downward for aggregators or SEO-style blogs.
+- Treat blogs, review aggregators, Reddit/HN summaries, SEO pages, and anonymous complaints as directional sentiment only (Low/Medium confidence).
+- Ensure currency and number outputs use clean plain text (e.g., `$270M`, `$11B`, `50% of ARR`).

@@ -48,3 +48,26 @@ For claims about valuation, IPO status/timing, revenue, funding, enterprise adop
 ## Strict Source Binding
 - Every non-obvious claim in Trust-positive and Trust-negative tables must include a clickable Markdown source link in the Source URL column.
 - If no URL is available, either omit the claim or place it under weak/unverified signals with Low confidence and explicit "source URL unavailable" language.
+
+## Strict Source URL and Usage Rules
+- Every source in Trust-positive and Trust-negative tables must be a clickable Markdown link: `[Source title](https://...)`.
+- Source-title-only entries are invalid in Source URL columns.
+- If a usable URL is unavailable, omit the claim from main evidence tables or move it to Source quality notes / weak signals with Low confidence.
+- Cite a source only if it was actually fetched/read via `webContent`, or if a direct URL was clearly available from `webSearch` results.
+- Do not invent source titles.
+- Do not list sources that were not actually used.
+
+## Cybersecurity and Legal Claim Handling
+For vulnerabilities, data exposure, PII leaks, prompt injection, breaches, or security incidents:
+- Prefer primary research, vendor advisories, CVE/advisory pages, official disclosures, or trusted cybersecurity reporting.
+- If a source is an aggregator or SEO-style blog, cap confidence at Medium or Low.
+- Distinguish confirmed vulnerability/incident from alleged exposure or researcher claim.
+
+## Weak Sentiment Source Handling
+- Blogs, review aggregators, Reddit/HN summaries, SEO content, and anonymous complaints are directional public sentiment only.
+- Do not treat weak sentiment sources as verified reputation facts.
+- Label these explicitly as "directional public sentiment" and keep confidence at Low or Medium.
+
+## Number and Currency Formatting
+- Use clean plain-text formatting for money/numbers (for example: `$270M`, `$11B`, `50% of ARR`).
+- Never output broken character-by-character numbers or malformed currency strings.

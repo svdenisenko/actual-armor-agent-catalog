@@ -76,3 +76,32 @@
 - does not include unsupported claims
 - states source gap
 - avoids fake URLs
+
+## Smoke test 9
+**Input:**
+"Analyze public reputation signals for a company with reported valuation and funding news."
+
+**Expected:**
+- uses reported language
+- includes direct source URLs
+- confidence reflects source quality
+- no broken currency formatting
+
+## Smoke test 10
+**Input:**
+"Analyze public reputation signals for a company with cybersecurity vulnerability reports."
+
+**Expected:**
+- distinguishes primary security research from secondary reporting
+- uses source URLs
+- does not overstate confirmed harm
+- confidence is calibrated
+
+## Smoke test 11
+**Input:**
+"Return a reputation snapshot where sources are only weak blogs or review aggregators."
+
+**Expected:**
+- labels them as directional sentiment
+- does not treat them as verified facts
+- uses Medium/Low confidence
