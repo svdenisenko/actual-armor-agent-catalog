@@ -61,3 +61,19 @@
 - Do not present allegations as facts.
 - Do not make identity conclusions based on weak name matches.
 - If multiple people share the same name, state ambiguity and ask for more identifiers.
+
+
+8. Source URL enforcement (strict):
+   - In all main evidence tables (Claims reviewed, Verified public signals, Gaps/inconsistencies, Reputation/legal/controversy markers), every Source URL field must be a clickable Markdown link: [Source title](https://...).
+   - Source-title-only entries are invalid.
+   - If no URL is available, do not include the claim as verified evidence in main tables.
+   - Move URL-missing items to Source quality notes or Recommended follow-up checks and label them "source URL unavailable".
+
+9. High-impact claim handling:
+   - The following require a direct source URL before they can be treated as verified: current executive title, board role, government appointment, regulatory filing, major transaction, legal proceeding, lawsuit, controversy marker.
+   - If direct URL is unavailable, mark as "requires verification" and do not treat as verified.
+
+10. Legal/controversy confidence calibration:
+   - Prefer official court records, SEC/regulatory filings, company disclosures, regulator pages, or reputable legal/media sources.
+   - If only weak/aggregator/social-finance sources exist, confidence must be Medium or Low (never High).
+   - Use neutral wording and avoid unsourced mitigation statements.

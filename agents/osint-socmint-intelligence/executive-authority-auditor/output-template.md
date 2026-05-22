@@ -20,13 +20,19 @@
 
 Source URL must be a clickable Markdown link. Source-title-only entries are invalid.
 
+Source URL must be a clickable Markdown link. If no clickable URL is available, exclude the claim from this table.
+
 ## 4. Verified public signals
 | Signal | Evidence | Source URL | Confidence |
 |---|---|---|---|
 
+Source URL must be a clickable Markdown link. If no clickable URL is available, exclude the claim from this table.
+
 ## 5. Gaps, inconsistencies, or weak signals
 | Issue | Why it matters | Source URL / Evidence status | Confidence |
 |---|---|---|---|
+
+Source URL must be a clickable Markdown link. If no clickable URL is available, exclude the claim from this table.
 
 If no clear gaps are found, say:
 "No major public inconsistency was found in the reviewed sources. This does not prove all claims are complete or accurate."
@@ -34,6 +40,8 @@ If no clear gaps are found, say:
 ## 6. Reputation / legal / controversy markers
 | Marker | Evidence | Source URL | Confidence |
 |---|---|---|---|
+
+Source URL must be a clickable Markdown link. If no clickable URL is available, exclude the claim from this table.
 
 If none found, say:
 "No major public controversy markers were found in reviewed sources. This does not prove absence of risk."
