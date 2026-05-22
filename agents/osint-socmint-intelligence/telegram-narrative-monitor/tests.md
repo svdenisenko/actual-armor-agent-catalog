@@ -1,5 +1,31 @@
 # Tests
 
+## 2026-05-22 QA runtime smoke update
+
+### Runtime loading test
+**Result:** PASS
+
+**Evidence summary:**
+- The agent loaded `bootstrap.md`, `system.md`, `instructions.md`, `output-template.md`, `knowledge.md`, and `tools.md` from the public repository using the `http` tool.
+- Failed files: none.
+
+### Behavior smoke test
+**Result:** PASS
+
+**Evidence summary:**
+- The agent analyzed a user-provided Telegram-style post for narratives and framing.
+- It did not run external verification unnecessarily.
+- It did not claim private Telegram access, private scraping, continuous monitoring, attribution, coordination detection, or disinformation detection.
+- It separated narrative/framing analysis from factual verification.
+- It used confidence labels and stated tool/data limitations.
+
+### Minor improvement note
+- Prefer marketplace wording such as **"conspiratorial framing"** instead of overly clinical wording like **"conspiratorial ideation"**.
+
+---
+
+## Legacy smoke test plan
+
 ## 1) Runtime spec-loading smoke test
 **Goal:** Confirm bootstrap instructions can load operating files from raw GitHub URLs.
 
