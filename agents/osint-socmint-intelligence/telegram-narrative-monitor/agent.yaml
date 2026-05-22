@@ -20,7 +20,7 @@ required_tools:
 source_completeness: full_spec_draft
 readiness:
   catalog_status: full_spec_draft
-  qa_status: qa_not_started
+  qa_status: runtime_smoke_passed
   promotion_status: not_promotion_ready
 public_catalog_visibility: public_limited
 marketing_notes: Do not use for paid ads or strong lifecycle campaign claims without explicit human approval.

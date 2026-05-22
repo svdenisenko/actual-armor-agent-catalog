@@ -18,3 +18,10 @@
   - `promotion_status: not_promotion_ready`
   - `public_catalog_visibility: public_limited`
 - Added explicit caveats for Telegram access/tool limitations and verification boundaries.
+
+
+## 2026-05-22
+- QA update: runtime loading smoke test `PASS` (all required operating files loaded via `http`; failed files: none).
+- QA update: behavior smoke test `PASS` (narrative/framing analysis succeeded with proper verification boundaries and limitations).
+- Updated readiness QA status to `runtime_smoke_passed`.
+- Kept promotion status as `not_promotion_ready`.
