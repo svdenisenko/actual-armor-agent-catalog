@@ -1,0 +1,36 @@
+id: executive-authority-auditor
+name: Executive Authority Auditor
+description: Rigorously verifies the credibility and claims of executives and advisors by cross-referencing their public digital footprint.
+source_url: https://github.com/svdenisenko/actual-armor-agent-catalog/tree/main/agents/osint-socmint-intelligence/executive-authority-auditor
+source_date: 2026-05-21
+primary_category: Strategic Intelligence / Corporate & Executive Risk
+secondary_category: OSINT / SOCMINT Intelligence
+target_users:
+  - founders
+  - investors
+  - analysts
+  - due diligence teams
+  - partnership teams
+  - executive search teams
+  - media / research teams
+required_tools:
+  - http
+  - webSearch
+  - webContent
+source_completeness: full_spec_draft
+readiness:
+  catalog_status: full_spec_draft
+  qa_status: not_tested
+  promotion_status: not_promotion_ready
+public_catalog_visibility: public_limited
+safety:
+  no_private_personal_data: true
+  no_doxxing_or_harassment: true
+  no_unsupported_allegations: true
+  no_fraud_label_without_strong_evidence: true
+  public_professional_relevance_required: true
+  source_urls_required: true
+  confidence_labels_required: true
+  identity_ambiguity_warning_required: true
+  allegations_must_be_attributed: true
+  absence_of_evidence_is_not_proof: true
