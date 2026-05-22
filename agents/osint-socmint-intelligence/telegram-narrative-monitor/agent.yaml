@@ -1,0 +1,35 @@
+id: telegram-narrative-monitor
+name: Telegram Narrative Monitor
+description: Analyze Telegram channel content or user-provided Telegram exports to map narratives, claims, actors, framing patterns, and risk markers while separating narrative analysis from factual verification.
+source_url: https://github.com/svdenisenko/actual-armor-agent-catalog/tree/main/agents/osint-socmint-intelligence/telegram-narrative-monitor
+source_date: 2026-05-22
+primary_category: OSINT / SOCMINT Intelligence
+secondary_category: Narrative Intelligence & Response
+target_users:
+  - OSINT investigators
+  - analysts
+  - journalists
+  - fact-checkers
+  - media monitoring teams
+  - reputation and risk teams
+  - policy and communications teams
+required_tools:
+  - http
+  - webSearch
+  - webContent
+source_completeness: full_spec_draft
+readiness:
+  catalog_status: full_spec_draft
+  qa_status: qa_not_started
+  promotion_status: not_promotion_ready
+public_catalog_visibility: public_limited
+marketing_notes: Do not use for paid ads or strong lifecycle campaign claims without explicit human approval.
+safety:
+  no_private_telegram_scraping_claims: true
+  no_claim_of_private_channel_access: true
+  no_claim_of_continuous_monitoring_without_supported_runtime_tooling: true
+  separate_narrative_analysis_from_factual_verification: true
+  no_disinformation_label_without_evidence: true
+  confidence_labels_required: true
+  source_verification_required_for_external_factual_claims: true
+  no_harassment_targeting_doxxing_or_private_data_collection: true
