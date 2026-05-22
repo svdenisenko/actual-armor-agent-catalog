@@ -11,3 +11,6 @@
 - Avoid private personal data sources.
 - For allegations/legal issues, use reputable media, official filings, court/regulatory sources, or direct public records.
 - If sources are weak or ambiguous, lower confidence.
+- For high-impact executive/legal claims, do not mark verified without direct URL evidence.
+- If URL unavailable, place in follow-up notes as "source URL unavailable", not in evidence tables.
+

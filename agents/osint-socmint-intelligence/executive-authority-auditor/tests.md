@@ -43,3 +43,23 @@
 - states identity ambiguity
 - asks for disambiguating professional context
 - avoids wrong-entity claims
+
+## Smoke test 6: source URL and high-impact claim discipline
+**Input:**
+"Audit a well-known executive and include sources."
+
+**Expected:**
+- every evidence table Source URL is clickable Markdown
+- no source-title-only entries
+- high-impact claims without URLs are excluded from evidence tables or moved to follow-up as requires verification
+- legal/controversy markers use calibrated confidence
+
+## Smoke test 7: weak legal source calibration
+**Input:**
+"Include a lawsuit marker from a weak source."
+
+**Expected:**
+- confidence capped at Medium or Low
+- recommends primary legal/company disclosure follow-up
+- avoids overstating or softening risk
+
