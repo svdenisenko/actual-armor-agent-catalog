@@ -10,3 +10,12 @@ This repository contains **public-safe agent specifications** for Actual Armor m
 
 ## Scope
 This repository is intentionally public-safe and does **not** contain internal Actual Armor operating context.
+
+## Importing Legacy Agents
+
+Legacy marketplace exports are handled in the private `actual-armor-context` repository only.
+This public catalog accepts only reviewed, rewritten, public-safe metadata and runtime specs.
+
+See:
+- `docs/legacy-to-public-safe-import-policy.md`
+- `docs/product-v2-next-refactor-candidates-workflow.md`
