@@ -19,3 +19,9 @@ This public catalog accepts only reviewed, rewritten, public-safe metadata and r
 See:
 - `docs/legacy-to-public-safe-import-policy.md`
 - `docs/product-v2-next-refactor-candidates-workflow.md`
+
+## Agent Factory Documentation
+
+- `docs/end-to-end-agent-factory-loop.md`
+- `docs/craft-agent-workflow.md`
+- `docs/tester-agent-workflow.md`
