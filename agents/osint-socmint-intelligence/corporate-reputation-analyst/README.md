@@ -2,6 +2,10 @@
 
 Public-safe reference agent for source-grounded corporate reputation analysis.
 
+## Readiness note
+
+This agent is currently the first validated OpenWebUI Product V3 → AA GitHub Repo Reader → marketplace package reference case. It is package-generated and ready for manual craft as draft, but it is not runtime smoke-passed, not promotion-ready, and not public-ready.
+
 ## Files
 
 - `agent.yaml` — public metadata and readiness flags.
