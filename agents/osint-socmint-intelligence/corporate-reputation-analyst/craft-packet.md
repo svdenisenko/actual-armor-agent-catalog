@@ -7,6 +7,7 @@ This packet gives a human Crafter or future Craft Agent the exact public-safe in
 ## Agent
 
 - Name: Corporate Reputation Analyst
+- Slug: `corporate-reputation-analyst`
 - Category: Reputation / OSINT / Brand Risk
 - User segments: B2B, founders, executives, brand/PR teams, analysts, investor-facing teams
 
@@ -78,3 +79,8 @@ Craft Status:
 Evidence:
 Known Issues:
 Next Step:
+
+
+## Tester Handoff
+
+- Smoke test path: `qa/smoke-tests/corporate-reputation-analyst.md`
