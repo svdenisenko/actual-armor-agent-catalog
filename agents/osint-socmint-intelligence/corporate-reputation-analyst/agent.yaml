@@ -20,7 +20,7 @@ required_tools:
 required_tools_note: http means HTTP(S) URL-fetch tool for trusted repo spec loading.
 readiness:
   catalog_status: pilot
-  qa_status: not_tested
+  qa_status: craft_packet_ready
   promotion_status: not_promotion_ready
 safety:
   no_unsourced_reputation_claims: true
