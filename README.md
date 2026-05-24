@@ -25,3 +25,4 @@ See:
 - `docs/end-to-end-agent-factory-loop.md`
 - `docs/craft-agent-workflow.md`
 - `docs/tester-agent-workflow.md`
+- `docs/openwebui-craft-workflow-template.md`
