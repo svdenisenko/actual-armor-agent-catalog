@@ -6,7 +6,7 @@ This index tracks customer-facing marketplace agents and readiness posture.
 
 | Agent | Category | Source completeness | Visibility | QA status | Promotion status | Source URL |
 |---|---|---|---|---|---|---|
-| Corporate Reputation Analyst | Strategic Intelligence / Corporate & Executive Risk | full_spec_draft (reference package present) | public_full | craft_packet_ready | not_promotion_ready | https://github.com/svdenisenko/actual-armor-agent-catalog/tree/main/agents/osint-socmint-intelligence/corporate-reputation-analyst |
+| Corporate Reputation Analyst | Strategic Intelligence / Corporate & Executive Risk | full_spec_draft (reference package present) | public_full | marketplace_package_generated / ready_for_manual_craft | not_promotion_ready | https://github.com/svdenisenko/actual-armor-agent-catalog/tree/main/agents/osint-socmint-intelligence/corporate-reputation-analyst |
 | The Truth Scanner | Narrative Intelligence & Response | full_spec_draft | public_full | runtime_smoke_passed | not_promotion_ready | https://github.com/svdenisenko/actual-armor-agent-catalog/tree/main/agents/osint-socmint-intelligence/the-truth-scanner |
 | YouTube Narratives Decoder | Media / Content Intelligence | full_spec_draft | public_full | runtime_smoke_passed | not_promotion_ready | https://github.com/svdenisenko/actual-armor-agent-catalog/tree/main/agents/osint-socmint-intelligence/youtube-narratives-decoder |
 | Telegram Narrative Monitor | OSINT / SOCMINT Intelligence | full_spec_draft | public_limited | runtime_smoke_passed | not_promotion_ready | https://github.com/svdenisenko/actual-armor-agent-catalog/tree/main/agents/osint-socmint-intelligence/telegram-narrative-monitor |
