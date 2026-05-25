@@ -26,3 +26,10 @@ See:
 - `docs/craft-agent-workflow.md`
 - `docs/tester-agent-workflow.md`
 - `docs/openwebui-craft-workflow-template.md`
+
+## Agent Scoring
+
+- `scoring/README.md`
+- `scoring/agent-prioritization-framework.md`
+- `scoring/agent-scorecard-template.md`
+- `scoring/deduplication-checklist.md`
