@@ -27,6 +27,10 @@ See:
 - `docs/tester-agent-workflow.md`
 - `docs/openwebui-craft-workflow-template.md`
 
+## Agent Capabilities
+
+- `docs/agents/CAPABILITIES.md`
+
 ## Agent Scoring
 
 - `scoring/README.md`
