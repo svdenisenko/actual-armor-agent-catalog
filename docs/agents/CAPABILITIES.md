@@ -33,6 +33,5 @@ It can support structured verification for:
 ## Public-Safe Boundary
 
 - These docs describe capabilities, not production runtime tools.
-- No API/MCP implementation is included here.
-- No internal OpenWebUI configuration belongs here.
-- No private strategy, customer data, investor details, credentials, secrets, or internal roadmap should be added.
+- No private strategy, customer data, investor details, credentials, secrets, revenue model, or internal roadmap should be added.
+- No transaction execution, credit purchase flows, or other runtime platform operations are described here.
