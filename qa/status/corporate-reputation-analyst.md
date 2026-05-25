@@ -57,3 +57,46 @@ Current readiness:
 
 Next step:  
 Create or update the Corporate Reputation Analyst agent as a draft in the AA marketplace using the generated package, then run Tester Agent smoke QA against the real marketplace runtime.
+
+## Manual Marketplace Draft Smoke Test
+
+Status: runtime_smoke_passed_with_notes  
+Result: pass_with_notes
+
+Summary:  
+Corporate Reputation Analyst was created as a draft in the Actual Armor marketplace and manually smoke-tested against the public GitHub runtime bootstrap flow.
+
+Smoke test results:
+- Runtime loading: PASS
+- Normal task behavior: PASS
+- Missing input behavior: PASS
+- Source discipline: PASS_WITH_NOTE
+- Private/context leakage: PASS
+- Tool boundary behavior: PASS
+
+Configured tools:
+- http
+- webSearch
+- webContent
+
+Blocked/not required tools:
+- Telegram MCP
+- Telemetr MCP
+- private AA context
+- raw legacy exports
+
+Notes:
+- For “do not search” prompts, make the limitation more explicit and avoid overly strong final verdicts unless based on fresh/current sources or clearly referenced active-session sources.
+- Copy/paste from chat may degrade table/link formatting; this should not be treated as a runtime failure unless confirmed in UI/export.
+
+Current readiness:
+- marketplace_draft_created
+- runtime_smoke_passed_with_notes
+- not_public_ready
+- needs_final_product_review
+
+Next step:
+Human Product should review the draft marketplace agent and decide whether to:
+- approve for publication,
+- request a small source-discipline/style patch,
+- or run additional QA.
