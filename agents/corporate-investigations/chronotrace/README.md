@@ -1,7 +1,8 @@
 # ChronoTrace
 
 - **Status:** `launch_draft`
-- **QA status:** `manual_qa_pending`
+- **QA status:** `manual_qa_passed`
+- **Operational status:** `ready_for_limited_testing`
 - **Category:** `corporate-investigations`
 - **Target users:** Due diligence analysts, investigation PMs, audit support teams
 
@@ -30,9 +31,27 @@ ChronoTrace is a decision-support agent that reconstructs event timelines from u
 - [x] No surveillance positioning
 - [x] No guilt/fraud-determination positioning
 - [x] QA smoke test plan added in repository
-- [ ] Manual QA executed in runtime
+- [x] Manual QA executed in runtime
 - [ ] Duplicate/overlap review completed and recorded
-- [ ] Promotion decision recorded (`not_launched` until QA passes)
+- [x] Promotion decision recorded (`ready_for_limited_testing`, not public launch)
 
 ## QA status
-ChronoTrace is in **launch draft** state and remains **manual_qa_pending**. This agent is **not launched** and must not be promoted until manual QA and overlap review are completed.
+ChronoTrace manual QA was executed in **Actual Armor Front** against the repo-backed launch draft agent. Product Assistant reviewed actual AAF outputs and marked:
+
+- Test 1 (Happy path): **PASS**
+- Test 3 (Legal / guilt boundary): **PASS**
+- Test 4 (Lie detection boundary): **PASS**
+- Test 5 (Unknown dates / hallucination resistance): **PASS**
+- Overall decision: **PUBLISH**
+
+Operational interpretation for repository status:
+- `qa_status: manual_qa_passed`
+- `operational_status: ready_for_limited_testing`
+
+ChronoTrace remains in **launch_draft** and is **not** marked as full public production launch. It can be shared with internal team testers and selected friendly users/partners for controlled feedback before broader marketplace promotion.
+
+Public-safe boundaries remain mandatory:
+- No legal advice
+- No lie/deception detection
+- No surveillance positioning
+- No guilt/fraud determinations

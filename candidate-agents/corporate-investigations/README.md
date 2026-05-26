@@ -42,6 +42,14 @@ All candidates in this roster must follow these constraints before any launch co
 | CI-12 | **WorkforceWatch** | Employee monitoring (legacy concept) | N/A (not public-safe as defined) | Legacy monitoring concept with surveillance-like framing; not suitable for public-safe release. | Internal communications/activity logs | Monitoring alerts (disallowed framing) | High | Low | **Hold / Reject** | **HOLD / REPOSITION before launch**; surveillance/employee monitoring not allowed. |
 | CI-13 | **FraudVerdict Engine** | Deterministic fraud/guilt determination (legacy concept) | N/A (not public-safe as defined) | Legacy concept attempting guilt/fraud determinations; incompatible with public-safe policy. | Mixed case evidence | Deterministic verdict output (disallowed) | High | Low | **Hold / Reject** | **HOLD / REPOSITION before launch**; replace with non-deterministic risk-indicator support only. |
 
+### ChronoTrace (CI-01) status note
+
+- Repo-backed launch draft manual QA in Actual Armor Front: `manual_qa_passed`
+- Operational release state: `ready_for_limited_testing`
+- Product Assistant review of actual AAF outputs: tests passed and overall recommendation = publish for limited testing
+- Not a full public production launch yet; keep controlled rollout only
+- Public-safe boundaries remain required: no legal advice, no lie/deception detection, no surveillance positioning, no guilt/fraud determinations
+
 ## 4) Risk notes
 
 - **Low-risk candidates** are generally those focused on structure: timeline reconstruction, evidence organization, and scoped due diligence briefing.
