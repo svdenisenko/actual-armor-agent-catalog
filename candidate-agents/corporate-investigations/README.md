@@ -90,3 +90,7 @@ Before recommending any candidate for launch, Product Assistant must run a **dup
 - Record the dedup decision in the candidate evaluation notes.
 
 **Mandatory note:** Product Assistant must run duplicate/overlap checks against existing public marketplace agents before recommending any candidate for launch.
+
+## Launch status tracker
+
+Track operational rollout status here: [status-tracker.md](./status-tracker.md).
