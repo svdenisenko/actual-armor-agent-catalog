@@ -91,6 +91,7 @@ Before recommending any candidate for launch, Product Assistant must run a **dup
 
 **Mandatory note:** Product Assistant must run duplicate/overlap checks against existing public marketplace agents before recommending any candidate for launch.
 
-## Launch status tracker
+## Product workqueue and status tracker
 
-Track operational rollout status here: [status-tracker.md](./status-tracker.md).
+- Product workqueue (default Product routing): [product-workqueue.md](./product-workqueue.md)
+- Launch status tracker: [status-tracker.md](./status-tracker.md)
