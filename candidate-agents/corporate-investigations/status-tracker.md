@@ -12,7 +12,7 @@ Operational constraints:
 | ID | Candidate name | Risk level | Recommended action | Current status | AAB Product packet status | AAF created? | Manual QA status | Repo launch draft status | Limited testing status | Next action | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | CI-01 | **ChronoTrace** | Low | Create | **manual_qa_passed / ready_for_limited_testing** | Complete | Yes | Passed | Exists | Not started | Share with internal team and selected friendly testers | Completed reference cycle: candidate selected, repo-backed draft created, AAF agent created, manual QA passed, Product Assistant review completed. |
-| CI-02 | **InvestIQ** | Low | Create | **not_started / next_candidate** | Not started | No | Not started | Not started | Not started | Prepare AAB Product packet, then create repo-backed launch draft | Suggested next candidate for launch cycle based on low risk and roster recommendation. |
+| CI-02 | **InvestIQ** | Low | Create | **launch_packet_complete / ready_for_aaf_creation** | Complete | No | Not started | Exists | Not started | Create InvestIQ in AAF from repo-backed launch packet, then run manual QA smoke tests | Product packet and launch draft prepared; not created in AAF, not QA-passed, not launched. |
 | CI-03 | **PolicySentry** | Medium | Specialize | not_started | Not started | No | Not started | Not started | Not started | Draft public-safe scope language and uncertainty/caveat requirements before packet prep | Keep non-legal-advice framing and avoid enforcement conclusions. |
 | CI-04 | **EvidenceLedger** | Low | Create | not_started | Not started | No | Not started | Not started | Not started | Queue for packet creation after CI-02 | Low-risk organizational utility; strong follow-on candidate. |
 | CI-05 | **SourceReliability Mapper** | Medium | Merge | not_started | Not started | No | Not started | Not started | Not started | Run duplicate/overlap review and decide merge target | High overlap risk with existing verification/reputation capabilities. |
@@ -31,3 +31,4 @@ Operational constraints:
 - `next_candidate`: prioritized next for the manual launch cycle.
 - `manual_qa_passed / ready_for_limited_testing`: manual QA completed in AAF; controlled limited testing is next.
 - `hold / reposition_required`: blocked from launch pending rename/reframe to public-safe scope.
+- `launch_packet_complete / ready_for_aaf_creation`: Product packet and repo launch draft exist, but AAF creation, manual QA, limited testing, and launch are not complete.
