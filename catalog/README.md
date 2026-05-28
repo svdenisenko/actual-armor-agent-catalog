@@ -10,13 +10,17 @@ This directory is the public-safe, repo-backed catalog layer for Actual Armor ma
 | `marketplace-agents.md` | Human-readable catalog summary for review and planning. |
 | `schemas/agent.schema.json` | JSON schema for one normalized catalog record. |
 | `aaf-live-agent-import-template.csv` | Template Product/humans should use to paste or export current live AAF marketplace inventory. |
+| `imports/aaf-agent-inventory-2026-05-28.csv` | Raw AAF inventory snapshot for review only; not a confirmed live marketplace catalog. |
+| `imports/aaf-agent-inventory-2026-05-28-summary.md` | Review summary and guardrails for the 2026-05-28 raw AAF inventory snapshot. |
 | `creation-queue/aaf-creation-queue.md` | AAF creation selection rules and tracking table. |
 
 ## Current completeness warning
 
-The broader live AAF marketplace inventory is **not present in this public repo** as of `2026-05-28`. The catalog therefore includes a control record with status `NEEDS_AAF_EXPORT` instead of inventing live agents.
+A raw AAF inventory snapshot is present at `imports/aaf-agent-inventory-2026-05-28.csv`, with review guardrails in `imports/aaf-agent-inventory-2026-05-28-summary.md`. This snapshot is **raw discovery input only**: it has 88 data rows, 0 confirmed public/live agents, unknown public URLs, and all records require prompt/safety review.
 
-Product or a human owner must import or paste the current AAF live marketplace list into this repo before anyone treats this catalog as complete. Use `aaf-live-agent-import-template.csv`, then convert each verified live item into a normal `marketplace-agents.yaml` record with status, source files, AAF link, QA state, and lifecycle-email constraints.
+The broader confirmed live AAF marketplace inventory is **not present in this public repo** as of `2026-05-28`. The catalog therefore includes a control record with status `NEEDS_AAF_EXPORT` instead of inventing live agents.
+
+Product or a human owner must review the raw snapshot or import a verified current AAF live marketplace list before anyone treats this catalog as complete. Use `aaf-live-agent-import-template.csv`, then convert each verified live item into a normal `marketplace-agents.yaml` record with status, source files, AAF link, QA state, and lifecycle-email constraints. Do not promote raw imported agents into the canonical catalog until they are verified public-safe and have confirmed AAF public links.
 
 ## Status values
 
