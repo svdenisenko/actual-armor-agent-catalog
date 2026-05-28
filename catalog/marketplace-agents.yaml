@@ -1,0 +1,958 @@
+---
+catalog_version: 0.1.0
+last_verified_date: '2026-05-28'
+inventory_completeness: NEEDS_AAF_EXPORT
+catalog_notes:
+- This public-safe catalog is the canonical marketplace-wide layer for CMO references,
+  Product/Craft creation planning, and QA status tracking.
+- The current broader live AAF marketplace inventory is not present in this repo;
+  do not treat the catalog as complete until Product imports the AAF live export.
+- No CI candidate is marked LIVE_IN_AAF; CI-01 is only READY_FOR_LIMITED_TESTING based
+  on repo-backed evidence.
+agents:
+- id: AAF-LIVE-INVENTORY-EXPORT
+  name: Current AAF Live Marketplace Inventory Export Required
+  slug: aaf-live-inventory-export-required
+  status: NEEDS_AAF_EXPORT
+  category: marketplace-inventory
+  target_user:
+  - Product
+  - CMO
+  - QA
+  public_safe_value: Placeholder record documenting that the broader live AAF marketplace
+    inventory is not present in this public repo and must be imported before the catalog
+    is treated as complete.
+  short_description: AAF live marketplace inventory export is required before CMO
+    or Product treats this catalog as complete.
+  long_description: This is not a user-facing agent. It is a catalog control record
+    for the missing live AAF marketplace list. Product or a human owner must paste
+    or import the current AAF live agent/workflow inventory using the CSV template,
+    then convert each verified live item into a normal catalog record with source,
+    status, link, QA, and CTA fields.
+  opening_message: 'Not user-facing. Product: import the current AAF live marketplace
+    list before claiming complete marketplace coverage.'
+  required_inputs:
+  - Current AAF live marketplace agent/workflow name
+  - AAF URL
+  - Category
+  - Current visibility/status
+  - Owner/date exported
+  expected_output_format:
+  - Verified catalog records for each current live marketplace item
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: not_applicable
+  creation_status: needs_aaf_export
+  source_files:
+  - agents/index.md
+  - catalog/aaf-live-agent-import-template.csv
+  duplicate_overlap_notes: Unknown live inventory cannot be deduplicated until AAF
+    export is supplied.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: 'No external CTA. Internal action only: import AAF live inventory.'
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  - Do not name, count, or promote live AAF agents that are not represented by verified
+    catalog records.
+  last_verified_date: '2026-05-28'
+- id: CI-01
+  name: ChronoTrace
+  slug: chronotrace
+  status: READY_FOR_LIMITED_TESTING
+  category: Timeline reconstruction
+  target_user:
+  - Due diligence analysts
+  - Investigation PMs
+  - Audit support teams
+  public_safe_value: Reconstructs event timelines from documents and public-safe sources
+    to support review sequencing.
+  short_description: ChronoTrace reconstructs source-grounded timelines and flags
+    gaps for human review.
+  long_description: ChronoTrace is a corporate-investigations decision-support agent
+    for timeline reconstruction and source organization. It builds structured chronologies
+    from user-provided and public-safe materials, distinguishes confirmed and uncertain
+    events, highlights gaps or inconsistencies, and prepares follow-up questions without
+    issuing legal, deception, guilt, or fraud conclusions.
+  opening_message: Share dated documents, notes, excerpts, or public-safe links. I
+    will organize them into a source-linked chronology, flag gaps and inconsistencies,
+    and suggest follow-up questions for human review.
+  required_inputs:
+  - Dated documents, notes, filings, media links, or excerpts
+  - Known entities, aliases, and date range
+  - Review objective or event sequence to reconstruct
+  expected_output_format:
+  - Scope and input summary
+  - Chronology table with date/time, entity, event, source, and confidence
+  - Gaps and unknowns
+  - Inconsistency indicators
+  - Suggested follow-up questions
+  - Safety note
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: manual_qa_passed
+  creation_status: created_in_aaf_ready_for_limited_testing
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  - agents/corporate-investigations/chronotrace/README.md
+  - agents/corporate-investigations/chronotrace/bootstrap.md
+  duplicate_overlap_notes: Medium overlap with general research summarizers; differentiation
+    is chronology-first, source-linked event ordering with uncertainty tags.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: Use controlled limited-testing language only; CTA should
+    invite selected testers to provide feedback, not broad public launch claims.
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  last_verified_date: '2026-05-28'
+- id: CI-02
+  name: InvestIQ
+  slug: investiq
+  status: AAF_CREATE_READY
+  category: Planning & scoping support
+  target_user:
+  - Investigations leads
+  - Risk analysts
+  - Compliance program teams
+  - Investment analysts
+  - Partnership teams
+  public_safe_value: Structures early diligence scope, facts, signals, unknowns, and
+    follow-up questions for human review.
+  short_description: InvestIQ helps structure early company, fund, startup, and counterparty
+    due diligence for human review.
+  long_description: InvestIQ is a corporate and investment due diligence assistant
+    for early-stage review. It turns user-provided materials and clearly identified
+    public-source observations into a structured diligence brief that separates facts,
+    signals, unknowns, evidence gaps, and recommended next checks. It is ready for
+    AAF creation but is not live, QA-passed, or launched.
+  opening_message: Share a company, fund, startup, counterparty, or investment target
+    plus notes, links, or documents. I will organize known facts, separate public-source
+    observations from user-provided information, surface possible risk signals and
+    unknowns, and create follow-up questions for human due diligence review.
+  required_inputs:
+  - Target identity and disambiguating details
+  - Review objective
+  - Materials to analyze
+  - Known constraints
+  - Desired depth
+  expected_output_format:
+  - Scope and input summary
+  - User-provided facts
+  - Public-source observations
+  - Target profile summary
+  - Founder/team/control signals
+  - Diligence signals
+  - Unknowns and missing evidence
+  - Evidence checklist
+  - Recommended follow-up questions
+  - Safety note
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: not_started
+  creation_status: launch_packet_complete_ready_for_aaf_creation
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  - agents/corporate-investigations/investiq/README.md
+  - agents/corporate-investigations/investiq/bootstrap.md
+  - agents/corporate-investigations/investiq/qa-smoke-tests.md
+  duplicate_overlap_notes: Medium overlap with project-planning copilots, research
+    summarizers, reputation agents, and counterparty DD brief builders; keep diligence-scoping
+    differentiation.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: 'Internal/product CTA only: create in AAF and run QA. Do
+    not tell end users to try it yet.'
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  - Do not claim InvestIQ is created, QA-passed, opened for testing, launched, or
+    approved before those updates are recorded.
+  last_verified_date: '2026-05-28'
+- id: CI-03
+  name: PolicySentry
+  slug: policysentry
+  status: NEEDS_PRODUCT_REVIEW
+  category: Policy mapping support
+  target_user:
+  - Compliance
+  - Internal audit
+  - Risk operations
+  public_safe_value: Maps observed facts to policy/control frameworks while reserving
+    interpretation for humans.
+  short_description: Maps facts to policy and control language with caveats for human
+    interpretation.
+  long_description: PolicySentry is a candidate concept for mapping observed facts
+    to policies, controls, and review questions. It requires product review before
+    any AAF packet because wording must avoid legal advice, enforcement conclusions,
+    or deterministic compliance findings.
+  opening_message: Provide policy/control text and fact excerpts; I can draft a policy-to-fact
+    map and questions for human review once the candidate is approved.
+  required_inputs:
+  - Policy text or controls library
+  - Incident facts or evidence excerpts
+  - Review objective
+  expected_output_format:
+  - Policy-to-fact map
+  - Potential control gaps as questions
+  - Human-review caveats
+  - Follow-up questions
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: not_started
+  creation_status: not_started
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  duplicate_overlap_notes: Medium overlap with compliance assistants; specialize before
+    launch.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: No user-facing CTA until product review and creation readiness
+    are recorded.
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  last_verified_date: '2026-05-28'
+- id: CI-04
+  name: EvidenceLedger
+  slug: evidenceledger
+  status: DRAFT
+  category: Evidence organization
+  target_user:
+  - Case managers
+  - Legal ops support
+  - Trust and safety review teams
+  public_safe_value: Organizes documents, sources, and notes into traceable evidence
+    bundles with provenance metadata.
+  short_description: Organizes evidence into traceable indexes, provenance maps, and
+    missing-evidence lists.
+  long_description: EvidenceLedger is a low-risk candidate for organizing documents,
+    notes, and source annotations into traceable evidence bundles. It is not yet packeted
+    for AAF creation.
+  opening_message: Provide files, URLs, excerpts, notes, and source annotations; after
+    launch preparation, this agent should organize them into an evidence index and
+    provenance map.
+  required_inputs:
+  - Files or excerpts
+  - URLs
+  - Interview notes
+  - Source annotations
+  expected_output_format:
+  - Evidence index
+  - Provenance map
+  - Citation pack
+  - Missing-evidence list
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: not_started
+  creation_status: not_started
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  duplicate_overlap_notes: Low overlap risk; still requires standard duplicate review.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: No user-facing CTA until packet creation and QA status are
+    recorded.
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  last_verified_date: '2026-05-28'
+- id: CI-05
+  name: SourceReliability Mapper
+  slug: source-reliability-mapper
+  status: NEEDS_PRODUCT_REVIEW
+  category: Source review & reliability
+  target_user:
+  - Analysts
+  - Reputational risk teams
+  public_safe_value: Assesses source quality signals and corroboration depth without
+    treating allegations as facts.
+  short_description: Maps source reliability signals, corroboration, and caveats for
+    human reviewers.
+  long_description: SourceReliability Mapper is a candidate concept with high overlap
+    risk. Product must decide whether to merge it into an existing verification or
+    reputation capability before any AAF creation work.
+  opening_message: Provide source links, metadata, and claim excerpts; after review,
+    this agent may map reliability signals and verification gaps.
+  required_inputs:
+  - Source links
+  - Publication metadata
+  - Claim excerpts
+  expected_output_format:
+  - Source reliability matrix
+  - Corroboration map
+  - Caveat summary
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: not_started
+  creation_status: blocked_pending_merge_review
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  duplicate_overlap_notes: High overlap with verification and reputation agents; merge/reuse
+    likely.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: No CTA; product merge decision required first.
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  last_verified_date: '2026-05-28'
+- id: CI-06
+  name: EntityLink Mapper
+  slug: entitylink-mapper
+  status: NEEDS_PRODUCT_REVIEW
+  category: Entity relationship mapping
+  target_user:
+  - Corporate intelligence teams
+  - Vendor risk teams
+  public_safe_value: Builds evidence-grounded relationship maps with ambiguity flags
+    and non-insinuating language.
+  short_description: Maps relationships between organizations, people, and events
+    from supplied evidence.
+  long_description: EntityLink Mapper is a candidate concept for evidence-grounded
+    relationship mapping. It requires product review to define ambiguity handling
+    and avoid insinuation language before packet creation.
+  opening_message: Provide entity names, records, disclosures, news excerpts, and
+    the relationship question to map.
+  required_inputs:
+  - Entity names
+  - Corporate records
+  - Disclosures
+  - News items
+  expected_output_format:
+  - Relationship graph summary
+  - Linkage rationale
+  - Ambiguity flags
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: not_started
+  creation_status: not_started
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  duplicate_overlap_notes: Medium overlap; specialize around transparent evidence-grounded
+    link rationale.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: No user-facing CTA until product review is complete.
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  last_verified_date: '2026-05-28'
+- id: CI-07
+  name: RiskSignal Triage
+  slug: risksignal-triage
+  status: NEEDS_PRODUCT_REVIEW
+  category: Early risk indicator triage
+  target_user:
+  - Vendor onboarding
+  - Partnership screening
+  - Procurement risk
+  public_safe_value: Converts mixed evidence into transparent risk indicators and
+    reviewer follow-up depth.
+  short_description: Triages risk indicators without deterministic pass/fail scoring.
+  long_description: RiskSignal Triage is a candidate concept that must be scoped as
+    non-deterministic review support. Product must define a cautious rubric and human-review
+    checkpoints before packet creation.
+  opening_message: Provide intake forms, screening notes, adverse-media snippets,
+    and review constraints.
+  required_inputs:
+  - Intake forms
+  - Screening notes
+  - Adverse media snippets
+  expected_output_format:
+  - Risk indicator checklist
+  - Triage priority
+  - Escalation suggestions
+  - Human-review caveats
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: not_started
+  creation_status: not_started
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  duplicate_overlap_notes: High overlap with risk-scoring tools; avoid automated pass/fail
+    positioning.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: No user-facing CTA until product review is complete.
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  last_verified_date: '2026-05-28'
+- id: CI-08
+  name: NarrativeConsistency Review
+  slug: narrativeconsistency-review
+  status: DRAFT
+  category: Consistency analysis
+  target_user:
+  - Analysts
+  - Comms risk teams
+  - Due diligence reviewers
+  public_safe_value: Compares statements across time and sources for inconsistencies
+    and unresolved questions.
+  short_description: Builds consistency matrices and clarification prompts without
+    deception claims.
+  long_description: NarrativeConsistency Review is a candidate concept for comparing
+    statements, dates, and source claims over time. It can be safe if framed as consistency
+    analysis rather than deception detection, but it has no launch packet yet.
+  opening_message: Provide public statements, filings, interviews, snapshots, or excerpts
+    to compare.
+  required_inputs:
+  - Public statements
+  - Filings
+  - Interviews
+  - Website snapshots
+  expected_output_format:
+  - Consistency matrix
+  - Contradiction candidates
+  - Clarification prompts
+  - Caveats
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: not_started
+  creation_status: not_started
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  duplicate_overlap_notes: Medium overlap; must avoid deception-detection claims.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: No user-facing CTA until packet creation and QA status are
+    recorded.
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  last_verified_date: '2026-05-28'
+- id: CI-09
+  name: AdverseMedia Digestor
+  slug: adversemedia-digestor
+  status: NEEDS_PRODUCT_REVIEW
+  category: Media signal aggregation
+  target_user:
+  - Reputation analysts
+  - Due diligence teams
+  public_safe_value: Summarizes adverse-media themes, recurrence, and source caveats
+    without treating allegations as facts.
+  short_description: Creates sourced adverse-media digests with allegation status
+    and caveats.
+  long_description: AdverseMedia Digestor is a candidate concept with high overlap
+    risk against existing reputation capabilities. Product must run duplicate/merge
+    review before any new AAF creation.
+  opening_message: Provide news links, date ranges, entity aliases, and watchlist
+    context.
+  required_inputs:
+  - News links
+  - Watchlists
+  - Date ranges
+  - Entity aliases
+  expected_output_format:
+  - Thematic digest
+  - Allegation status tracker
+  - Source caveats
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: not_started
+  creation_status: blocked_pending_merge_review
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  duplicate_overlap_notes: High overlap with corporate reputation agents; prefer integration
+    if overlap is confirmed.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: No CTA; product merge decision required first.
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  last_verified_date: '2026-05-28'
+- id: CI-10
+  name: CounterpartyDD Brief
+  slug: counterpartydd-brief
+  status: DRAFT
+  category: Due diligence support briefs
+  target_user:
+  - Deal teams
+  - Procurement
+  - Partnerships
+  - Investor operations
+  public_safe_value: Produces structured due diligence briefs with known facts, open
+    questions, and risk indicators.
+  short_description: Drafts decision-support due diligence briefs with mandatory uncertainty
+    sections.
+  long_description: CounterpartyDD Brief is a low-risk, high-value candidate for structured
+    due diligence briefing. It needs packet creation, duplicate review, and QA before
+    marketplace testing.
+  opening_message: Provide entity profile, collected evidence, market context notes,
+    and the review objective.
+  required_inputs:
+  - Entity profile
+  - Collected evidence
+  - Market context notes
+  expected_output_format:
+  - DD brief
+  - Unresolved issues list
+  - Decision-support summary
+  - Uncertainty section
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: not_started
+  creation_status: not_started
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  duplicate_overlap_notes: Medium overlap with diligence and reputation tools; require
+    differentiation.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: No user-facing CTA until packet creation and QA status are
+    recorded.
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  last_verified_date: '2026-05-28'
+- id: CI-11
+  name: VeracityJudge
+  slug: veracityjudge
+  status: REPOSITION_REQUIRED
+  category: Truth/deception adjudication legacy concept
+  target_user:
+  - N/A - not public-safe as defined
+  public_safe_value: Legacy concept retained only as a blocked repositioning item;
+    deception adjudication is not public-safe.
+  short_description: Blocked legacy deception-adjudication concept requiring full
+    rename and reframing.
+  long_description: VeracityJudge is a high-risk legacy concept attempting truthfulness
+    or deception classification. It must remain blocked until fully renamed and reframed
+    into a public-safe consistency or evidence-organization use case.
+  opening_message: Not applicable until reframed.
+  required_inputs:
+  - Not applicable
+  expected_output_format:
+  - No launch output; repositioning brief required
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: blocked
+  creation_status: hold_reposition_required
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  duplicate_overlap_notes: Low overlap, but policy risk blocks launch.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: No CTA; do not promote or create.
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  last_verified_date: '2026-05-28'
+- id: CI-12
+  name: WorkforceWatch
+  slug: workforcewatch
+  status: REPOSITION_REQUIRED
+  category: Employee monitoring legacy concept
+  target_user:
+  - N/A - not public-safe as defined
+  public_safe_value: Legacy concept retained only as a blocked repositioning item;
+    surveillance or employee monitoring is not public-safe.
+  short_description: Blocked legacy employee-monitoring concept requiring full public-safe
+    redesign.
+  long_description: WorkforceWatch is a high-risk legacy monitoring concept with surveillance-like
+    framing. It must remain blocked until the use case is rewritten away from employee
+    monitoring and approved as public-safe.
+  opening_message: Not applicable until reframed.
+  required_inputs:
+  - Not applicable
+  expected_output_format:
+  - No launch output; repositioning brief required
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: blocked
+  creation_status: hold_reposition_required
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  duplicate_overlap_notes: Low overlap, but surveillance framing blocks launch.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: No CTA; do not promote or create.
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  last_verified_date: '2026-05-28'
+- id: CI-13
+  name: FraudVerdict Engine
+  slug: fraudverdict-engine
+  status: REPOSITION_REQUIRED
+  category: Deterministic fraud/guilt legacy concept
+  target_user:
+  - N/A - not public-safe as defined
+  public_safe_value: Legacy concept retained only as a blocked repositioning item;
+    fraud or guilt verdicts are not public-safe.
+  short_description: Blocked deterministic fraud/guilt verdict concept requiring indicator-only
+    redesign.
+  long_description: FraudVerdict Engine is a high-risk legacy concept attempting deterministic
+    fraud or guilt determinations. It must remain blocked until replaced with non-deterministic,
+    source-grounded risk-indicator support and approved by Product.
+  opening_message: Not applicable until reframed.
+  required_inputs:
+  - Not applicable
+  expected_output_format:
+  - No launch output; repositioning brief required
+  suggested_tools:
+  - User-provided text/files/links
+  - Approved public web retrieval only if available in AAF
+  safety_rules:
+  - Decision support only; outputs are review aids for human judgment.
+  - Do not provide legal advice, legal conclusions, or legal strategy.
+  - Do not claim deception, lie detection, guilt, fraud, or verified wrongdoing.
+  - Do not support surveillance, covert monitoring, stalking, or employee-monitoring
+    use cases.
+  - Use cautious, non-accusatory language and require human oversight.
+  source_discipline_rules:
+  - Use user-provided or public-safe materials only.
+  - Separate sourced facts, user-provided claims, observations, uncertainty, and follow-up
+    questions.
+  - Do not invent sources, links, filings, dates, people, records, allegations, or
+    marketplace availability.
+  - Label gaps, conflicts, and confidence limits clearly.
+  public_private_notes: Public-safe catalog entry only. Do not include private repo
+    paths, private operational artifacts, internal orchestration details, or private
+    QA outputs in user-facing copy.
+  aaf_link:
+  qa_status: blocked
+  creation_status: hold_reposition_required
+  source_files:
+  - candidate-agents/corporate-investigations/README.md
+  - candidate-agents/corporate-investigations/status-tracker.md
+  duplicate_overlap_notes: Low overlap, but deterministic verdict framing blocks launch.
+  sendpulse_use_cases:
+  - Internal lifecycle planning
+  - Segment-safe educational copy
+  - Product update copy only when status and link support it
+  recommended_email_cta: No CTA; do not promote or create.
+  do_not_claim:
+  - Do not claim the agent is live in AAF unless aaf_link and repo evidence confirm
+    LIVE_IN_AAF.
+  - Do not claim legal, investment, safety, truthfulness, guilt, or fraud determinations.
+  - Do not imply access to private datasets, private QA artifacts, or internal runtime
+    details.
+  last_verified_date: '2026-05-28'
