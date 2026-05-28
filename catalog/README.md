@@ -12,6 +12,7 @@ This directory is the public-safe, repo-backed catalog layer for Actual Armor ma
 | `aaf-live-agent-import-template.csv` | Template Product/humans should use to paste or export current live AAF marketplace inventory. |
 | `imports/aaf-agent-inventory-2026-05-28.csv` | Raw AAF inventory snapshot for review only; not a confirmed live marketplace catalog. |
 | `imports/aaf-agent-inventory-2026-05-28-summary.md` | Review summary and guardrails for the 2026-05-28 raw AAF inventory snapshot. |
+| `cmo/lifecycle-agent-shortlist.md` | CMO planning-only lifecycle bucket shortlist derived from the raw AAF inventory classification; not launch approval and not a public/live agent list. |
 | `creation-queue/aaf-creation-queue.md` | AAF creation selection rules and tracking table. |
 
 ## Current completeness warning
