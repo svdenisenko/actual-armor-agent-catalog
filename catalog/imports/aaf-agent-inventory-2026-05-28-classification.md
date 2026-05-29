@@ -8,6 +8,10 @@
 - Because every `aaf_public_url` is `UNKNOWN` and no record has verified live/public status, **all 88 agents are labeled `DO_NOT_USE_IN_EMAILS_YET`**.
 - The practical next step is review sequencing: safety-sensitive/internal-looking records first, duplicate/overlap consolidation second, then CMO/Product shortlist review for possible future public-safe positioning.
 
+## 1.1 2026-05-29 live marketplace baseline update
+
+The 2026-05-28 raw inventory classification remains preserved as a historical, discovery-only import snapshot. Its 88 rows are not the current live marketplace count. It is now superseded **for current availability and marketplace/category email usage** by `catalog/status/aaf-live-marketplace-baseline-2026-05-29.md`, which records that AAF has approximately 100 live user-accessible agents pending a fresh export for exact count and metadata. This does not assign a default QA pass, exact-agent CTA readiness, paid-ads readiness, enterprise readiness, compliance approval, or recommended status to exact agents.
+
 ## 2. Classification counts
 
 | Classification / priority | Count |
