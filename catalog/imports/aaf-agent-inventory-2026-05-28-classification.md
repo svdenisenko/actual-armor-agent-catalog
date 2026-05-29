@@ -10,7 +10,7 @@
 
 ## 1.1 2026-05-29 live marketplace baseline update
 
-The 2026-05-28 raw inventory classification remains preserved as a historical, discovery-only import snapshot. It is now superseded **for current availability status only** by `catalog/status/aaf-live-marketplace-baseline-2026-05-29.md`, which records that AAF marketplace agents are live/user-accessible when confirmed by fresh export or manual Product confirmation. This does not assign a default QA pass, email readiness, paid-ads readiness, enterprise readiness, or recommended status to exact agents.
+The 2026-05-28 raw inventory classification remains preserved as a historical, discovery-only import snapshot. Its 88 rows are not the current live marketplace count. It is now superseded **for current availability and marketplace/category email usage** by `catalog/status/aaf-live-marketplace-baseline-2026-05-29.md`, which records that AAF has approximately 100 live user-accessible agents pending a fresh export for exact count and metadata. This does not assign a default QA pass, exact-agent CTA readiness, paid-ads readiness, enterprise readiness, compliance approval, or recommended status to exact agents.
 
 ## 2. Classification counts
 

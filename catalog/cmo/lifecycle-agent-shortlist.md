@@ -1,33 +1,31 @@
-# CMO Lifecycle Agent Shortlist — Planning Only
+# CMO Lifecycle Agent Shortlist — Historical Planning Buckets and Live Email Guardrails
 
 **Date:** 2026-05-28  
 **Source:** raw AAF inventory classification for `catalog/imports/aaf-agent-inventory-2026-05-28.csv`  
 **Audience:** CMO, Product, QA, and lifecycle campaign planning  
-**Decision state:** internal planning support only; not launch approval
+**Decision state:** historical planning support for exact-agent review; marketplace/category-level lifecycle email launch is allowed under the 2026-05-29 baseline guardrails
 
 ## 0.1 2026-05-29 live marketplace baseline update
 
-This 2026-05-28 shortlist remains preserved as historical CMO planning support based on the discovery-only raw import state. It is now superseded **for current availability status only** by `catalog/status/aaf-live-marketplace-baseline-2026-05-29.md`, which records that the AAF marketplace is live/user-accessible when confirmed by fresh export or manual Product confirmation. CMO/CBDO/BD may sell the live marketplace and workflow-category story, but exact-agent SendPulse, paid-ads, enterprise, compliance, or recommended claims still require Product/QA review, public-safe copy, and a verified usable AAF link.
+This 2026-05-28 shortlist remains preserved as historical CMO planning support based on the discovery-only raw import state. It is now superseded **for current availability and marketplace/category email usage** by `catalog/status/aaf-live-marketplace-baseline-2026-05-29.md`, which records that the AAF marketplace has approximately 100 live user-accessible agents pending a fresh export for exact count and metadata. CMO may now prepare and launch marketplace/category-level lifecycle emails using safe copy. Exact-agent CTA emails require Product-confirmed AAF link and public-safe copy. Paid ads and high-risk claims remain gated.
 
 ## 1. Executive summary
 
-This shortlist converts the raw AAF inventory classification into conservative lifecycle planning buckets for CMO SendPulse architecture work. It is **not** a public catalog, launch list, or approval to promote any individual agent.
+This shortlist converts the 2026-05-28 raw AAF inventory classification into conservative lifecycle planning buckets for CMO SendPulse architecture work. It is **not** the current marketplace count and is **not** a Product/QA pass for any individual agent.
 
-The imported AAF inventory contains **88 agents** discovered from `chat@actualarmor.com`. The classification states that **0 agents are confirmed public/live**, **0 public AAF URLs are verified**, every `aaf_public_url` is `UNKNOWN`, and every record requires prompt review. Therefore every candidate below remains planning-only with the status bundle:
+The imported AAF inventory contains **88 historical rows** discovered from `chat@actualarmor.com`. The classification states that, at the time of that import, **0 agents were confirmed public/live**, **0 public AAF URLs were verified**, every `aaf_public_url` was `UNKNOWN`, and every record required prompt review. As of the 2026-05-29 live marketplace baseline, AAF has approximately **100 live user-accessible agents**, pending a fresh export for exact count, current metadata, categories, and links.
 
-`DISCOVERY_ONLY` / `NEEDS_PUBLIC_LINK` / `NEEDS_COPY_REVIEW` / `NEEDS_PROMPT_REVIEW` / `DO_NOT_USE_IN_EMAILS_YET`
-
-CMO may use these buckets to sketch lifecycle education arcs, audience segmentation, nurture sequences, and Product verification requests. CMO must not write “try this agent now,” “use this agent,” “available in AAF,” “live,” “launched,” “QA passed,” or any direct agent CTA until Product verifies public/live status, usable AAF link, QA state, prompt safety, and public-safe copy.
+CMO may now use this document's buckets to rewrite and launch marketplace/category-level lifecycle emails using safe copy. CMO may also mention selected live agents as examples when they are visibly live in AAF and the copy avoids QA-passed, enterprise-grade, compliance-approved, legal-authority, guaranteed-detection, forensic-certainty, recommended, or best-in-class claims. Exact-agent CTA buttons still require Product-confirmed AAF links and public-safe copy. Paid ads and high-risk claims remain gated.
 
 ## 2. CMO usage rules
 
-1. **Use this document for campaign architecture only.** Treat bucket names as themes for lifecycle planning, not as public claims about available tools.
-2. **Do not promote raw inventory.** Raw imported agents are discovery-only and are not canonical `LIVE_IN_AAF` catalog records.
-3. **Do not invent URLs.** Every raw imported agent has `aaf_public_url = UNKNOWN`; do not add links or link-like CTAs.
-4. **Do not imply availability.** No candidate below may be described as live, public, launched, ready, verified, QA-approved, or user-accessible.
-5. **Use workflow-level language.** Until verification, CMO may plan generic educational CTAs such as “learn the workflow,” “review the checklist,” “see how analysts structure this process,” or “join the waitlist/updates,” if Product approves that campaign frame.
-6. **Ask Product for a verification batch.** Select 5–10 priority concepts from these buckets for Product, QA, and safety review before any agent-level lifecycle copy is drafted.
-7. **No final SendPulse email copy yet.** This document supports lifecycle map creation and Product handoff only.
+1. **Marketplace/category lifecycle emails are allowed now.** CMO may prepare and launch safe lifecycle emails about the live Actual Armor marketplace and workflow categories.
+2. **Do not treat the 88-row import as the current count.** The 88 imported rows are historical; use approximately 100 live user-accessible AAF agents pending a fresh export for exact count and metadata.
+3. **Use category-level messaging.** Safe categories include OSINT, narrative intelligence, strategic intelligence, corporate investigations, media/content analysis, and risk workflows.
+4. **Selected exact-agent mentions are allowed as examples.** Mention an exact agent only when it is visibly live in AAF and the copy avoids QA, enterprise, compliance, legal, guarantee, recommended, or best-in-class claims.
+5. **Exact-agent CTA buttons remain gated.** A “try/open/use this exact agent” CTA requires Product-confirmed usable AAF link and public-safe copy.
+6. **Paid ads and high-risk claims remain gated.** Do not use specific-agent paid ads, enterprise-grade claims, compliance/legal/detection/forensic-certainty claims, recommended/top-agent positioning, or QA-passed claims without Product/QA approval.
+7. **Safe marketplace CTAs are allowed.** CMO may use CTAs such as “Open Actual Armor,” “Explore live investigation workflows,” “Start your first investigation,” and “Explore the marketplace.”
 
 ## 3. Lifecycle campaign buckets
 
@@ -164,14 +162,16 @@ Priority overlap clusters for Product decision:
 
 ## 5. Recommended CMO next step
 
-1. Draft SendPulse campaign architecture using **buckets**, not individual “try this agent now” claims.
-2. Use generic workflow CTAs until public/live links are verified, such as:
-   - “Learn the workflow.”
-   - “Review the checklist.”
-   - “See the analyst process.”
-   - “Get the next workflow update.”
-3. Do not create final SendPulse email copy yet.
-4. Send Product a proposed verification batch of 5–10 priority agents. Recommended first-pass candidates because they are lifecycle-friendly if safely verified:
+1. Prepare and launch marketplace/category-level lifecycle emails using safe copy.
+2. Use marketplace and workflow CTAs such as:
+   - “Open Actual Armor.”
+   - “Explore live investigation workflows.”
+   - “Start your first investigation.”
+   - “Explore the marketplace.”
+3. Use selected agents as examples only when they are visibly live in AAF and copy avoids QA-passed, enterprise-grade, compliance-approved, legal-authority, guaranteed-detection, forensic-certainty, recommended, or best-in-class claims.
+4. Exact-agent CTA emails require Product-confirmed AAF link and public-safe copy.
+5. Paid ads and high-risk claims remain gated.
+6. Send Product a proposed verification batch of 5–10 priority agents for exact-agent CTA eligibility. Recommended first-pass candidates because they are lifecycle-friendly if safely verified:
    - OSINT Sensei
    - Student Claim Checker
    - The YouTube Summarizer
@@ -182,23 +182,24 @@ Priority overlap clusters for Product decision:
    - Global Brand Sentiment Tracker
    - ChronoTrace
    - Strategic Red Flag Summarizer
-5. Keep high-risk compliance, person-investigation, sanctions, dark web, military/war-claim, identity, and deterministic scoring concepts out of user-facing emails until a separate review approves a safe public framing.
+7. Keep high-risk compliance, person-investigation, sanctions, dark web, military/war-claim, identity, and deterministic scoring concepts out of exact-agent CTAs until a separate review approves a safe public framing.
 
 ## 6. Recommended Product next step
 
 1. Verify public/live status and usable AAF public links for the top CMO candidates.
 2. Confirm whether each candidate is public-safe, limited-test only, internal-only, needs rename/reframe, duplicate/merge, or should be retired.
-3. Review prompts and safety behavior before any CMO copy draft.
-4. Mark which agents can be safely referenced in lifecycle emails and document allowed CTA language.
-5. Promote only verified, repo-backed records into the canonical catalog. Do not mark any imported raw agent as `LIVE_IN_AAF` without evidence, QA status, and a public AAF link.
+3. Review prompts and safety behavior before any exact-agent CTA or high-risk claim.
+4. Mark which agents can be safely referenced in lifecycle emails and document allowed mention/CTA language.
+5. Promote only verified, repo-backed records into the canonical catalog. Do not mark any imported raw agent as `QA_PASSED_LIMITED`, `QA_PASSED`, recommended, enterprise-ready, compliance-approved, or exact-agent CTA-ready without Product/QA evidence and a usable AAF link.
 
 ## 7. Guardrails
 
-- Raw inventory is not the canonical public/live catalog.
-- This shortlist is CMO planning support, not campaign launch approval.
-- All raw imported candidates remain discovery-only and not email-ready.
-- CMO can use this shortlist for lifecycle architecture and Product verification requests only.
-- CMO must not claim availability, QA pass, launch status, public status, direct CTA availability, or user access without verified catalog status and a usable AAF public link.
-- CMO must not say “try this agent now” for any candidate in this document.
-- CMO must not invent URLs, public status, categories, agent capabilities, prompt quality, source coverage, or safety outcomes.
-- Product, QA, and safety review must happen before agent-level public copy, campaign copy, or SendPulse CTAs are drafted.
+- Raw inventory is not the current live marketplace count; the 88-row import is historical.
+- The current working marketplace estimate is approximately 100 live user-accessible AAF agents, pending a fresh export for exact count and metadata.
+- CMO may now prepare and launch marketplace/category-level lifecycle emails using safe copy.
+- CMO may use category-level messaging and safe marketplace CTAs such as “Open Actual Armor,” “Explore live investigation workflows,” “Start your first investigation,” and “Explore the marketplace.”
+- Selected exact-agent mentions are allowed as examples when the agent is visibly live in AAF and copy is careful.
+- Exact-agent CTA emails require Product-confirmed AAF link and public-safe copy.
+- Paid ads and high-risk claims remain gated.
+- CMO must not claim every agent is QA-passed, best-in-class, enterprise-grade, compliance-approved, legally authoritative, forensically certain, or guaranteed.
+- CMO must not invent exact-agent URLs, QA status, recommended status, source coverage, compliance status, legal conclusions, detection guarantees, or safety outcomes.
