@@ -5,6 +5,10 @@
 **Audience:** CMO, Product, QA, and lifecycle campaign planning  
 **Decision state:** internal planning support only; not launch approval
 
+## 0.1 2026-05-29 live marketplace baseline update
+
+This 2026-05-28 shortlist remains preserved as historical CMO planning support based on the discovery-only raw import state. It is now superseded **for current availability status only** by `catalog/status/aaf-live-marketplace-baseline-2026-05-29.md`, which records that the AAF marketplace is live/user-accessible when confirmed by fresh export or manual Product confirmation. CMO/CBDO/BD may sell the live marketplace and workflow-category story, but exact-agent SendPulse, paid-ads, enterprise, compliance, or recommended claims still require Product/QA review, public-safe copy, and a verified usable AAF link.
+
 ## 1. Executive summary
 
 This shortlist converts the raw AAF inventory classification into conservative lifecycle planning buckets for CMO SendPulse architecture work. It is **not** a public catalog, launch list, or approval to promote any individual agent.
